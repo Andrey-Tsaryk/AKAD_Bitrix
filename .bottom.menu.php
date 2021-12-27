@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Home", 
+		"/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"About us", 
+		"/about-us-footer/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Services", 
+		"/services_footer/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Portfolio", 
+		"/portfolio_footer/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Blog", 
+		"/blog_footer/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Contact us", 
+		"/contact-us-footer/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

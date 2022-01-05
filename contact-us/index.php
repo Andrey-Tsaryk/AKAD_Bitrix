@@ -11,12 +11,32 @@ $APPLICATION->SetTitle("CONTACT US");
 		</div>
 	</div>
 
+	
 
 	<section>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="row">
+				
+
+				<?$APPLICATION->IncludeComponent("bitrix:main.feedback", "main_feedback", Array(
+	"EMAIL_TO" => "tsaryk.job.it@gmail.com",	// E-mail, на который будет отправлено письмо
+		"EVENT_MESSAGE_ID" => "",	// Почтовые шаблоны для отправки письма
+		"OK_TEXT" => "Спасибо, ваше сообщение отправлено.",	// Сообщение, выводимое пользователю после отправки
+		"REQUIRED_FIELDS" => array(	// Обязательные поля для заполнения
+			0 => "NAME",
+			1 => "EMAIL",
+			2 => "OBJECT",
+			3 => "MESSAGE",
+		),
+		"USE_CAPTCHA" => "N",	// Использовать защиту от автоматических сообщений (CAPTCHA) для неавторизованных пользователей
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
+);?>
+
+
+					<!-- <div class="row">
 						<form action="#" method="post">
 							<div class="col-md-6">
 								<div class="input_1" style="margin-bottom:30px">
@@ -46,7 +66,22 @@ $APPLICATION->SetTitle("CONTACT US");
 								<a href="#" class="btn green"><span>send</span></a>
 							</div>
 						</form>
-					</div>
+					</div> -->
+
+					<?$APPLICATION->IncludeComponent(
+	"bitrix:map.yandex.view",
+	"",
+	Array(
+		"API_KEY" => "",
+		"CONTROLS" => array("ZOOM"),
+		"INIT_MAP_TYPE" => "MAP",
+		"MAP_DATA" => "a:4:{s:10:\"yandex_lat\";d:53.89709144146355;s:10:\"yandex_lon\";d:25.297895080157613;s:12:\"yandex_scale\";i:19;s:10:\"PLACEMARKS\";a:1:{i:0;a:3:{s:3:\"LON\";d:25.297803885051113;s:3:\"LAT\";d:53.89708193652647;s:4:\"TEXT\";s:22:\"Здесь я живу\";}}}",
+		"MAP_HEIGHT" => "846",
+		"MAP_ID" => "",
+		"MAP_WIDTH" => "555",
+		"OPTIONS" => array("ENABLE_SCROLL_ZOOM")
+	)
+);?>
 
 					<h4 class="montserrat-text uppercase" style="margin-top:100px">contact info</h4>
 					<p>Lorem ipsum dolor sit amet, conse adipisicing elit. Libero incidunt quod ab mollitia quia dolorum conse.</p>
@@ -68,11 +103,11 @@ $APPLICATION->SetTitle("CONTACT US");
 						<li><a href="#"><i class="icon ion-social-instagram"></i></a></li>
 					</ul>
 				</div><!-- end col -->
-
+				<!-- Map -->
 				<div class="col-md-6">
 					<div id="map" style="width:100%"></div>
 				</div>
-
+				<!-- /Map -->
 			</div>
 		</div>
 	</section>

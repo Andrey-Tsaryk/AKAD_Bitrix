@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/new akad/components/bitrix/main.feedback/main_feedback/style.css" => "1641416951251",]; ?>

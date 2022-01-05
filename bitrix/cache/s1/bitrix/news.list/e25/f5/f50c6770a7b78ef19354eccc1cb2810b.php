@@ -1,0 +1,27 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001641407925';
+$dateexpire = '001677407925';
+$ser_content = 'a:2:{s:7:"CONTENT";s:902:"
+	<div class="site-hero">
+
+					<ul class="slides id="bx_3218110189_1">
+			<li>
+				<div><span class="small-title uppercase montserrat-text">we\'re</span></div>
+				<div class="big-title uppercase montserrat-text">digital agency</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&nbsp;&nbsp;tempor incididunt ut labore et dolore magna aliqua.</p>
+							</li>			
+		</ul>
+					<ul class="slides id="bx_3218110189_2">
+			<li>
+				<div><span class="small-title uppercase montserrat-text">we do</span></div>
+				<div class="big-title uppercase montserrat-text">creative stuff</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</li>			
+		</ul>
+		
+	</div>
+
+	 ";s:4:"VARS";a:2:{s:8:"arResult";a:7:{s:2:"ID";s:1:"1";s:14:"IBLOCK_TYPE_ID";s:7:"content";s:13:"LIST_PAGE_URL";s:43:"#SITE_DIR#/content/index.php?ID=#IBLOCK_ID#";s:15:"NAV_CACHED_DATA";N;s:4:"NAME";s:51:"Слайдер на главной странице";s:7:"SECTION";b:0;s:8:"ELEMENTS";a:2:{i:0;i:1;i:1;i:2;}}s:18:"templateCachedData";a:3:{s:9:"frameMode";b:1;s:17:"__currentCounters";a:1:{s:28:"bitrix:system.pagenavigation";i:1;}s:13:"__editButtons";a:4:{i:0;a:5:{i:0;s:13:"AddEditAction";i:1;s:1:"1";i:2;s:152:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=1&type=content&ID=1&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F";i:3;s:31:"Изменить элемент";i:4;a:0:{}}i:1;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:1:"1";i:2;s:103:"/bitrix/admin/iblock_list_admin.php?IBLOCK_ID=1&type=content&lang=ru&action=delete&ID=E1&return_url=%2F";i:3;s:29:"Удалить элемент";i:4;a:1:{s:7:"CONFIRM";N;}}i:2;a:5:{i:0;s:13:"AddEditAction";i:1;s:1:"2";i:2;s:152:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=1&type=content&ID=2&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F";i:3;s:31:"Изменить элемент";i:4;a:0:{}}i:3;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:1:"2";i:2;s:103:"/bitrix/admin/iblock_list_admin.php?IBLOCK_ID=1&type=content&lang=ru&action=delete&ID=E2&return_url=%2F";i:3;s:29:"Удалить элемент";i:4;a:1:{s:7:"CONFIRM";N;}}}}}}';
+return true;
+?>

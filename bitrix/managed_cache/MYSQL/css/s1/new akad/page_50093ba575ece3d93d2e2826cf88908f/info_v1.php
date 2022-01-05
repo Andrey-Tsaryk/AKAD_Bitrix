@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/new akad/components/bitrix/news.list/mainpage_slider/style.css" => "1641404870150",]; ?>

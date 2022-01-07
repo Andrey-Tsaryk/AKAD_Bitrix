@@ -38,6 +38,36 @@ $this->setFrameMode(true);
 				</div>
 			</div> -->
 
+			<?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "PortfolioSectionsList", Array(
+	"ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
+		"CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
+		"CACHE_GROUPS" => "N",	// Учитывать права доступа
+		"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+		"CACHE_TYPE" => "N",	// Тип кеширования
+		"COUNT_ELEMENTS" => "Y",	// Показывать количество элементов в разделе
+		"COUNT_ELEMENTS_FILTER" => "CNT_ACTIVE",	// Показывать количество
+		"FILTER_NAME" => "sectionsFilter",	// Имя массива со значениями фильтра разделов
+		"IBLOCK_ID" => "2",	// Инфоблок
+		"IBLOCK_TYPE" => "content",	// Тип инфоблока
+		"SECTION_CODE" => "",	// Код раздела
+		"SECTION_FIELDS" => array(	// Поля разделов
+			0 => "CODE",
+			1 => "NAME",
+			2 => "",
+		),
+		"SECTION_ID" => "",	// ID раздела
+		"SECTION_URL" => "",	// URL, ведущий на страницу с содержимым раздела
+		"SECTION_USER_FIELDS" => array(	// Свойства разделов
+			0 => "",
+			1 => "",
+		),
+		"SHOW_PARENT_NAME" => "Y",	// Показывать название раздела
+		"TOP_DEPTH" => "1",	// Максимальная отображаемая глубина разделов
+		"VIEW_MODE" => "LINE",	// Вид списка подразделов
+	),
+	false
+);?>
+
 
 
 			<?$APPLICATION->IncludeComponent(

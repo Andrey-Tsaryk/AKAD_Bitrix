@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/new akad/components/bitrix/catalog.section.list/PortfolioSectionsList/style.css" => "16415181516236",]; ?>

@@ -93,12 +93,53 @@ $APPLICATION->SetTitle("Contact us");
 					</p> -->
 
 					<ul class="social-icons" style="margin-top:30px;">
-						<li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
+						<!-- <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
 						<li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
 						<li><a href="#"><i class="icon ion-social-youtube"></i></a></li>
 						<li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
 						<li><a href="#"><i class="icon ion-social-pinterest"></i></a></li>
-						<li><a href="#"><i class="icon ion-social-instagram"></i></a></li>
+						<li><a href="#"><i class="icon ion-social-instagram"></i></a></li> -->
+						<li>
+						<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/facebook.php"
+						));?>
+						</li>
+						<li>
+						<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/twitter.php"
+						));?>
+						</li>
+						<li>
+						<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/youtube.php"
+						));?>
+						</li>
+						<li>
+						<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/linkedin.php"
+						));?>
+						</li>
+						<li>
+						<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/pinterest.php"
+						));?>
+						</li>
+						<li><?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/instagram.php"
+						));?>
+						</li>
 					</ul>
 				</div><!-- end col -->
 

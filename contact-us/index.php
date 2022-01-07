@@ -83,24 +83,81 @@ $APPLICATION->SetTitle("CONTACT US");
 	)
 );?>
 
-					<h4 class="montserrat-text uppercase" style="margin-top:100px">contact info</h4>
-					<p>Lorem ipsum dolor sit amet, conse adipisicing elit. Libero incidunt quod ab mollitia quia dolorum conse.</p>
+	<h4 class="montserrat-text uppercase" style="margin-top:100px"><?$APPLICATION->IncludeComponent(
+	"bitrix:main.include","",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"PATH" => SITE_TEMPLATE_PATH . "/includes/footer_contact.php"
+	));?></h4>
+
+	<p><?$APPLICATION->IncludeComponent("bitrix:main.include","",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"PATH" => SITE_TEMPLATE_PATH . "/includes/footer_text.php"
+	));?></p>
 					
-					<p>
-						13D, Functional apartment, Unique colony, <br/>
-						Agadir 86360 <br/>
-						+212 124-566-780 <br/>
-						+212 124-566-780<br/>
-						<div><a href="mailto:email@website.com" class="link">email@website.com</a></div>
-					</p>
+	<p>
+	<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"PATH" => SITE_TEMPLATE_PATH . "/includes/footer_address.php"
+	));?><br/>
+
+	<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"PATH" => SITE_TEMPLATE_PATH . "/includes/footer_phone.php"
+	));?> <br/>
+
+	<div><?$APPLICATION->IncludeComponent("bitrix:main.include","",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"PATH" => SITE_TEMPLATE_PATH . "/includes/footer_email.php"
+	));?></div>
+	</p>
 
 					<ul class="social-icons" style="margin-top:30px;">
-						<li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
-						<li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
-						<li><a href="#"><i class="icon ion-social-youtube"></i></a></li>
-						<li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
-						<li><a href="#"><i class="icon ion-social-pinterest"></i></a></li>
-						<li><a href="#"><i class="icon ion-social-instagram"></i></a></li>
+						<li>
+						<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/facebook.php"
+						));?>
+						</li>
+						<li>
+						<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/twitter.php"
+						));?>
+						</li>
+						<li>
+						<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/youtube.php"
+						));?>
+						</li>
+						<li>
+						<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/linkedin.php"
+						));?>
+						</li>
+						<li>
+						<?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/pinterest.php"
+						));?>
+						</li>
+						<li><?$APPLICATION->IncludeComponent("bitrix:main.include","",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/instagram.php"
+						));?>
+						</li>
 					</ul>
 				</div><!-- end col -->
 				<!-- Map -->
